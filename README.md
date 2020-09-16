@@ -57,7 +57,7 @@ Outputs:
 
 **Breast Cancer**
 
-Figue below compares the `MLP prevision` (left) and `Actual value` (right) for 9 values.
+Figure below compares the `MLP prevision` (left) and `Actual value` (right) for 9 values.
 
 <p align="center">
   <img width="268" height="297" src="https://i.imgur.com/svaBucn.png">

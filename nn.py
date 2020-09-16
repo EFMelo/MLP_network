@@ -36,7 +36,7 @@ class MLP:
         self.__w, self.__b = Initializers.normalized_initialization(initializer, self.__n_atributes, layers)  # Iniciating weights and bias
         
         
-    def run(self, x, y, epochs, batch_size=0, optmizer='adam', lr=0.001, rho1=0.9, rho2=0.999, shuffle=True):
+    def run(self, x, y, epochs, batch_size=0, lr=0.001, optimizer='adam', rho1=0.9, rho2=0.999, shuffle=True):
 
         """
         Description
@@ -70,7 +70,7 @@ class MLP:
             batch_size = self.__n_images
 
         # initializing the optimizer  
-        opt = Optimizers(optmizer, self.__w, self.__n_layers)
+        opt = Optimizers(optimizer, self.__w, self.__n_layers)
         
 
         history = []

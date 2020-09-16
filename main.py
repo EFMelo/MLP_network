@@ -10,11 +10,11 @@ layers = (30, 30, 1)  # Three Layers with 30-30-1 neurons
 functions=('relu', 'relu', 'sigmoid')  # Activation function of each layer
 
 epochs = 300
-net = MLP(input_shape=in_shape, layers=layers, activations=functions, initializer='he')
-history = net.run(x_train, y_train, epochs=epochs, batch_size=32)
+model = MLP(input_shape=in_shape, layers=layers, activations=functions, initializer='he')
+history = model.run(x_train, y_train, epochs=epochs, batch_size=32)
 
 # Testing
-prediction = net.predict(x_test)
+prediction = model.predict(x_test)
 
 # Plotting the Loss
 plt.plot(range(epochs), history)
