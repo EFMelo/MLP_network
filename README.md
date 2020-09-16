@@ -2,9 +2,12 @@
 
 > Construction of a Multilayer Perceptron Network without the use of frameworks such as Keras or PyTorch.
 
-A MLP is featured by connected neurons arranged in many layers that form an architeture. The input layer (leftmost) receives the problem data, in the hidden layer more computational capacity is allocated, and the output layer (rightmost) provides the results obtained. The Figure below illustrates an MLP architecture.
+A MLP is featured by connected neurons arranged in many layers that form an architeture. The input layer receives the problem data, in the hidden layer, more computational capacity is allocated, and the output layer provides the results obtained. The Figure below illustrates an MLP architecture.
 
-![](..\\Images\\mlp.png)
+<p align="center">
+  <img width="273" height="208" src="https://i.imgur.com/WmAVtg5.png">
+</p>
+
 
 ### Example of Use
 
@@ -56,9 +59,12 @@ Outputs:
 
 Figue below compares the `MLP prevision` (left) and `Actual value` (right) for 9 values.
 
-![](..\\Images\\breast_cancerr.png)
+<p align="center">
+  <img width="268" height="297" src="https://i.imgur.com/svaBucn.png">
+</p>
 
 ### Contact
 
 emeloppgi@gmail.com
+
 [github.com/EFMelo](https://github.com/EFMelo)
