@@ -36,7 +36,7 @@ class MLP:
         self.__w, self.__b = Initializers.normalized_initialization(initializer, self.__n_atributes, layers)  # Iniciating weights and bias
         
         
-    def run(self, x, y, epochs, batch_size=0, lr=0.001, optimizer='adam', rho1=0.9, rho2=0.999, shuffle=True):
+    def run(self, x, y, epochs, batch_size=None, lr=0.001, optimizer='adam', rho1=0.9, rho2=0.999, shuffle=True):
 
         """
         Description
@@ -66,7 +66,7 @@ class MLP:
         
 
         # if the batch_size was not informed
-        if batch_size == 0:
+        if batch_size == None:
             batch_size = self.__n_images
 
         # initializing the optimizer  
