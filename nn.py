@@ -168,7 +168,9 @@ class MLP:
         for i in range(len(activations)):
             self.__unions_gate.append(functions.UnionGate())
             
-            if activations[i] == 'sigmoid':
+            if activations[i] == 'linear':
+                self.__activations.append(functions.Linear())
+            elif activations[i] == 'sigmoid':
                 self.__activations.append(functions.Sigmoid())
             elif activations[i] == 'tanh':
                 self.__activations.append(functions.Tanh())

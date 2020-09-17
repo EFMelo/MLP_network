@@ -15,7 +15,7 @@ A MLP is featured by connected neurons arranged in many layers that form an arch
 
 - `input_shape`: A tuple or list containing the number of samples and the number of attributes must be informed.
 - `layers`: A tuple or list containing the number of neurons in each layer.
-- `activations`: A tuple or list containing the activation functions in each layer. The activation functions are: _'sigmoid'_, _'tanh'_ and _'relu'_
+- `activations`: A tuple or list containing the activation functions in each layer. The activation functions are: _'linear'_, _'sigmoid'_, _'tanh'_ and _'relu'_
 - `initializer`: A string informing the type of initialization, which can be _'glorot'_ or _'he'_. The _'glorot'_ value is the default.
 
 ```python

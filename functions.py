@@ -1,4 +1,4 @@
-from numpy import transpose, exp, tanh, maximum, square
+from numpy import transpose, exp, tanh, maximum, square, ones
 
 
 class UnionGate:
@@ -16,6 +16,19 @@ class UnionGate:
         dw = transpose(self.__x)
 
         return dx, dw
+
+
+class Linear:
+    
+    def forward(self, x):
+        
+        self.__x = x
+        
+        return x
+    
+    def backward(self):
+        
+        return ones((self.__x.shape[0], self.__x.shape[1]))
 
 
 class Sigmoid:
