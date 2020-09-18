@@ -1,8 +1,8 @@
 from nn import MLP
-from dataset import DataSet
+from dataset import BreastCancer
 import matplotlib.pyplot as plt
 
-x_train, y_train, x_test, y_test, _ = DataSet.breast_cancer(pp='mms')
+x_train, y_train, x_test, y_test, _ = BreastCancer.load_data(pp='mms')
 
 # Training
 in_shape = (519, 30)  # input format -> (number_of_samples, number_of_attributes)
