@@ -13,8 +13,8 @@ class BreastCancer():
         -----------
         Dataset with 519 training samples and 50 test samples.
         Classes:
-            0 - Don't have breast cancer
-            1 - Have breast cancer
+            0 - No breast cancer
+            1 - With breast cancer
     
         Parameters
         ----------

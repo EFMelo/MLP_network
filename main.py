@@ -1,5 +1,5 @@
 from nn import MLP
-from dataset import BreastCancer
+from datasets import BreastCancer
 import matplotlib.pyplot as plt
 
 x_train, y_train, x_test, y_test, _ = BreastCancer.load_data(pp='mms')
