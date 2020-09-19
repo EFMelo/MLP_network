@@ -57,11 +57,41 @@ Outputs:
 
 **Breast Cancer**
 
-Figure below compares the `MLP prevision` (left) and `Actual value` (right) for 9 values.
+The goal is to say if have breast cancer. So:
+- `1`: With breast cancer
+- `0`: No breast cancer
+
+Using the dataset:
+
+```python
+from datasets import BreastCancer
+x_train, y_train, x_test, y_test, _ = BreastCancer.load_data(pp='mms')
+```
+
+The figure below compares the `MLP prevision` (left) and `Actual value` (right) for 9 values.
 
 <p align="center">
   <img width="268" height="297" src="https://i.imgur.com/svaBucn.png">
 </p>
+
+
+**Wine Quality**
+
+The goal is to say the wine quality. The score ranges from `0 to 10`.
+
+Using the dataset:
+
+```python
+from datasets import WineQuality
+x_train, y_train, x_test, y_test, norm = WineQuality.load_data(pp='std')
+```
+
+The figure below compares the `MLP prevision` (left) and `Actual value` (right). In the center are rounded MLP values.
+
+<p align="center">
+  <img width="481" height="300" src="https://i.imgur.com/2LydV3n.png">
+</p>
+
 
 ### Contact
 
