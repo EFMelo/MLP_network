@@ -49,17 +49,20 @@ history = model.run(x_train, y_train, epochs=150, batch_size=32, lr=1e-4, optimi
 Dataset with `519 training` samples and `50 test` samples.
 
 Outputs:
-- 0: Don't have breast cancer.
-- 1: Have breast cancer.
+- `0`: No breast cancer.
+- `1`: With breast cancer.
+
+**Wine Quality**
+
+Dataset with `4500 training` samples and `398 test` samples.
+
+Output:
+- Wine quality (score between `0 and 10`)
 
 
 ### Some Results of MLP
 
 **Breast Cancer**
-
-The goal is to say if have breast cancer. So:
-- `1`: With breast cancer
-- `0`: No breast cancer
 
 Using the dataset:
 
@@ -76,8 +79,6 @@ The figure below compares the `MLP prevision` (left) and `Actual value` (right) 
 
 
 **Wine Quality**
-
-The goal is to say the wine quality. The score ranges from `0 to 10`.
 
 Using the dataset:
 
