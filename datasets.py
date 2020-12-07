@@ -3,7 +3,7 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from csv import reader
 from numpy import array
 
-class BreastCancer():
+class BreastCancer:
 
     @classmethod
     def load_data(cls, pp=None):
@@ -130,21 +130,4 @@ class WineQuality:
             for value in all_data:
                 cls.__data.append([float(v) for v in value])
             
-            cls.__data = array(cls.__data)
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            cls.__data = array(cls.__data)     
